@@ -1,0 +1,85 @@
+@import 'localization.css';
+.contract-list .item .text {
+            white-space: normal;
+        }
+
+.order-steps {
+    background-image: linear-gradient(180deg,#ece5da 0%,#ece5da 100%) !important;
+    background-image: url( "/content/images/gradient.png" );
+    background-attachment: scroll;
+    background-repeat: repeat-x;
+    background-position: left top;
+    overflow: hidden;
+    border-bottom-color: #A9A9A9;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+}
+
+    .order-steps .selected {
+        #background-image: url( "/content/images/overlay.png" );
+        /*box-shadow: <inset*> <offset-x> <offset-y> <blur-radius*> <spread-radius*> <color*>;*/
+        box-shadow: inset 5px 0 5px -5px #333333, inset -5px 0 5px -5px #333333;
+        /*border-color: #be1e2d;
+        border-style: solid;
+        border-width: 0 1px;*/
+    }
+
+    .order-steps > .order-step {
+        padding: 0px 10px;
+        height: 44px;
+        float: left;
+        text-align: center;
+        font-size: 18pt;
+        font-weight: bold;
+        color: #FFF;
+        text-shadow: 1px 1px 1px #000000;
+    }
+
+        .order-steps > .order-step .step-indicator {
+            width: 28px;
+            height: 28px;
+            line-height: 24px;
+            font-size: 14pt;
+            margin-right: 0 4px 0 0;
+            border: 2px solid #FFFFFF;
+            border-radius: 24px;
+            display: inline-block;
+        }
+
+        .order-steps > .order-step .step-title {
+            display: inline-block;
+            line-height: 45px;
+        }
+
+    .order-steps.enabled > .order-step:hover {
+        background-image: url( "/content/images/overlay_light.png" );
+        cursor: pointer;
+    }
+
+    .order-steps.enabled > .order-step.selected:hover {
+        background-image: url( "/content/images/overlay.png" );
+        cursor: default;
+    }
+
+ .CultureSelectorOrder{visibility: hidden;}
+
+    button, input[type="submit"], input[type="button"] {
+    background-color: #F4F4F4;
+    border-color: #A9A9A9;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 2px;
+    color: #000000;
+    text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.7);
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+button:hover, input[type="submit"]:hover, input[type="button"]:hover {
+    background-color: #F08A7F;
+    box-shadow: 0 0 5px #D6D6D6;
+    cursor: pointer;
+    color: #FFF;
+    text-shadow: 1px 1px #000;
+}
+.order-info{display: none;}
